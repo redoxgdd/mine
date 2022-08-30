@@ -1,0 +1,534 @@
+@media (max-width: 500px){
+    
+body{
+    background-color: aliceblue;
+    cursor: default;
+}
+header{
+    padding: 50px;
+
+}
+.card img{
+    margin-left: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    zoom: 70%;
+}
+
+.icon img{
+    float: left;
+    zoom: 15%;
+    rotate: 130deg;
+}
+
+.about1{
+    background-color: rgba(0, 255, 255, 0.371);
+    border: 2px solid rgba(20, 104, 20, 0.465);
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+
+}
+.about2{
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+    border-bottom-right-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+        transition: all 2s ease-out;
+
+}
+
+.about1:hover{
+    background-color: rgba(0, 255, 255, 0.371);
+    border: 2px solid rgba(20, 104, 20, 0.465);
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 70%;
+    border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+
+}
+.about2:hover{
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 70%;
+    display: flex;
+    flex-wrap: wrap;
+        transition: all 2s ease-out;
+
+}
+
+.basic-info{
+    width: 200px;
+    margin: 10px;
+    margin-top: 50px;
+    zoom: 80%;
+}
+
+
+.project-card{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(183, 234, 234, 0.396);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.project-card:hover{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(183, 234, 234, 0.396);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px 2px grey;
+    transition: all 2s ease-out;
+}
+
+.image img{
+    width: 100px;
+    margin-top: 50px;
+    margin-right: 5px;
+        transition: all 2s ease-out;
+
+}
+.info{
+    width: 200px;
+    font-size: small;
+    transition: all 2s ease-out;
+
+}
+
+}
+@media (max-width:300px){
+    header{
+        padding: 5px;
+        padding-bottom: 50px;
+    }
+    .card img{
+        margin-left: 10px;
+        margin-top: 40px;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        zoom: 50%;
+    }
+    
+    
+    .about1{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-top-right-radius: 100%;
+    }
+    .about2{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        display: block;
+    }
+    
+    .about1:hover{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 70%;
+        border-top-right-radius: 70%;
+        transition: all 2s;
+    
+    }
+    .about2:hover{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 70%;
+        display: block;
+        transition: all 2s;
+    
+    }
+    .basic-info{
+        width: 200px;
+        margin: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* zoom: 80%; */
+        font-size: 18.9px;
+    }
+    .project-card{
+        display: block;
+        justify-content: space-between;
+        background-color: rgba(183, 234, 234, 0.396);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+    }
+       .project-card:hover{
+        display: block;
+        justify-content: space-between;
+        background-color: rgba(183, 234, 234, 0.396);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 2px 2px 10px 2px grey;
+        transition: all 2s ease-out;
+        
+    }
+    
+    .image img{
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 1%;
+        
+    }
+    .info{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* common classes */
+.nav{
+    position: fixed;
+    right: 37%;
+    top: -1%;
+}
+.dsh{
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    
+}
+.dash{
+    background-color: black;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 2px;
+    /* margin-top: 19px; */
+    /* rotate: 45deg; */
+}
+.menu{
+    background-color: rgb(1, 16, 16);
+    margin-top: 10px;
+    margin-right: -550px /*-58px*/;
+    width: 250px;
+    display: none;
+    color: whitesmoke;
+
+}
+.curp{
+    cursor: pointer;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+.cancel-box{
+    margin-right: 10px;
+}
+
+.title{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.dash1{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin-top: 19px;
+    rotate: 45deg;
+}
+.dash2{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    rotate: 90deg;
+}
+.pages{
+    display: block;
+    flex-wrap: wrap;
+    zoom: 120%;
+    color: whitesmoke;
+
+}
+.page{
+    border-left: 5px solid rgb(18, 76, 76);
+    border-bottom: 1px solid rgb(18, 76, 76);
+    margin-bottom: 5px;
+    transition: all 2s ease-out;
+    color: whitesmoke;
+
+
+
+}
+.page:hover{
+    border-left: none;
+    border-right: 5px solid rgb(18, 76, 76);
+    background-color: rgba(1, 16, 16, 0.903);
+    color: white;
+    font-weight: bolder;
+    transition: all 1s ease-out;
+
+}
+.name{
+    font-weight: bolder;
+    color: rgb(43, 201, 149);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button-holder{
+    display: flex;
+    margin-top: 10px;
+}
+.button{
+    padding: 5px;
+    background-color: none;
+    border: 2px solid rgb(133, 222, 133);
+    width: fit-content;
+    cursor: pointer;
+    transition: all 2s ease-out;
+
+}
+.button:hover{
+    padding: 5px;
+    background-color: rgb(133, 222, 133);
+    transition: all 2s ;
+    border: 2px solid rgb(7, 7, 7);
+    width: fit-content;
+    cursor: pointer;
+    transition: all 2s ease-out;
+
+}
+.undline{
+    text-decoration: underline;
+}
+.cap{
+    text-transform: capitalize;
+}
+.center{
+    text-align: center;
+}
+.marl10{
+    margin-left: 10px;
+    transition: all 2s ease-out;
+
+}
+.bdrnon{
+    border: none;
+    transition: all 2s ease-out;
+
+}
+.bdrnon:hover{
+    border: none;
+    transition: all 2s ease-out;
+
+}
+.blue{
+    background-color: rgba(127, 127, 246, 0.505);
+    width: fit-content;
+        transition: all 2s ease-out;
+
+    
+
+}
+
+.blue:hover{
+    background-color: rgba(0, 0, 255, 0.505);
+    border: none;
+    box-shadow: 2px 2px 10px 2px grey;
+        transition: all 2s ease-out;
+
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 255, 255, 0.734);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+}
+.conclusion{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:active{
+    text-decoration: none;
+    color: black;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    zoom: 80%;
+    background-color: rgba(127, 255, 212, 0.283);
+    width: 20px;
+    padding-left: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* ------------- */
+
+@media (min-width: 500px){
+
+    body{
+        background-color: aliceblue;
+        cursor: default;
+        transition: all 2s ease-out;
+
+
+    }
+    header{
+        padding: 50px;
+    
+    }
+    .card img{
+        margin-left: 60px;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        transition: all 2s ease-out;
+
+    }
+    
+
+    .about1{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+
+    }
+    .about2{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        transition: all 2s ease-out;
+
+    }
+    
+    .about1:hover{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 70%;
+        border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+    
+    }
+    .about2:hover{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        transition: all 2s ease-out;
+    
+    }
+    .bdr{
+        border-left: 2px solid grey;
+        border-bottom: 2px solid ghostwhite;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+        box-shadow: 2px 2px 5px 1px  black;
+        transition: all 2s ease-out;
+
+    }
+    .bdr:hover{
+        padding: 5px;
+        border-bottom: 2px solid rgb(23, 23, 69);
+        background-color: aliceblue;
+        
+        transition: all 2s ease-out;
+    }
+    
+    .basic-info{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 50px;
+        transition: all 2s ease-out;
+
+    }
+    .projects{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 2s ease-out;
+
+    }
+    .project-card{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    background-color: rgba(183, 234, 234, 0.396);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: all 2s ease-out;
+
+    }
+    .project-card:hover{
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+        background-color: rgba(183, 234, 234, 0.396);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 2px 2px 10px 2px grey;
+        transition: all 2s ease-out;
+        }
+
+
+    .image img{
+        width: 200px;
+        margin-top: 30px;
+        transition: all 2s ease-out;
+
+    }
+    
+    .image img:hover{
+        width: 220px;
+        box-shadow: 2px 2px 10px 2px grey;
+        transition: all 2s ease-out;
+        margin-top: 30px;
+    }
+
+    .info{
+        width: 170px;
+        font-size: small;
+        transition: all 2s ease-out;
+
+    }
+    
+}
+
