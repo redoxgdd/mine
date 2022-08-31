@@ -2,6 +2,7 @@ const menus = document.querySelector('.menu');
 const dsh = document.querySelector('.dsh');
 const cancel = document.querySelector('.cancel-box');
 cancel.addEventListener('click', clearMenu)
+const allxnav = document.querySelector('.allxnav');
 
 dsh.addEventListener('click', showMenu);
 // menus.addEventListener('click', stay);
@@ -16,6 +17,7 @@ function showMenu(e){
     // }
 
     dsh.style.display='none';
+    document.body.style.overflowY = 'visible';
 }
 // function none(){
 //     menus.style.display = 'none';
@@ -24,6 +26,7 @@ function showMenu(e){
 function clearMenu(){
     menus.style.display = 'none';
     dsh.style.display='block';
+    document.body.style.overflowY = 'visible';
         
 
     
