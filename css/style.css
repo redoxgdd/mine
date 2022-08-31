@@ -1,211 +1,13 @@
-@media (max-width: 500px){
-    
-body{
-    background-color: aliceblue;
-    cursor: default;
-}
-header{
-    padding: 50px;
-
-}
-.card img{
-    margin-left: 10px;
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    zoom: 70%;
-}
-
-.icon img{
-    float: left;
-    zoom: 15%;
-    rotate: 130deg;
-}
-
-.about1{
-    background-color: rgba(0, 255, 255, 0.371);
-    border: 2px solid rgba(20, 104, 20, 0.465);
-    width: 100%;
-    height: 300px;
-    border-top-right-radius: 100%;
-        transition: all 2s ease-out;
-
-}
-.about2{
-    background-color: aqua;
-    width: 100%;
-    height: 300px;
-    border-bottom-right-radius: 100%;
-    display: flex;
-    flex-wrap: wrap;
-        transition: all 2s ease-out;
-
-}
-
-.about1:hover{
-    background-color: rgba(0, 255, 255, 0.371);
-    border: 2px solid rgba(20, 104, 20, 0.465);
-    width: 100%;
-    height: 300px;
-    border-bottom-left-radius: 70%;
-    border-top-right-radius: 100%;
-        transition: all 2s ease-out;
-
-}
-.about2:hover{
-    background-color: aqua;
-    width: 100%;
-    height: 300px;
-    border-bottom-right-radius: 100%;
-    border-top-left-radius: 70%;
-    display: flex;
-    flex-wrap: wrap;
-        transition: all 2s ease-out;
-
-}
-
-.basic-info{
-    width: 200px;
-    margin: 10px;
-    margin-top: 50px;
-    zoom: 80%;
-}
-
-
-.project-card{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(183, 234, 234, 0.396);
-    padding: 10px;
-    border-radius: 20px;
-    margin: 20px;
-}
-.project-card:hover{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(183, 234, 234, 0.396);
-    padding: 10px;
-    border-radius: 20px;
-    margin: 20px;
-    box-shadow: 2px 2px 10px 2px grey;
-    transition: all 2s ease-out;
-}
-
-.image img{
-    width: 100px;
-    margin-top: 50px;
-    margin-right: 5px;
-        transition: all 2s ease-out;
-
-}
-.info{
-    width: 200px;
-    font-size: small;
-    transition: all 2s ease-out;
-
-}
-
-}
-@media (max-width:300px){
-    header{
-        padding: 5px;
-        padding-bottom: 50px;
-    }
-    .card img{
-        margin-left: 10px;
-        margin-top: 40px;
-        width: 200px;
-        height: 100px;
-        text-align: center;
-        zoom: 50%;
-    }
-    
-    
-    .about1{
-        background-color: rgba(0, 255, 255, 0.371);
-        border: 2px solid rgba(20, 104, 20, 0.465);
-        width: 100%;
-        height: 300px;
-        border-top-right-radius: 100%;
-    }
-    .about2{
-        background-color: aqua;
-        width: 100%;
-        height: 300px;
-        border-bottom-right-radius: 100%;
-        display: block;
-    }
-    
-    .about1:hover{
-        background-color: rgba(0, 255, 255, 0.371);
-        border: 2px solid rgba(20, 104, 20, 0.465);
-        width: 100%;
-        height: 300px;
-        border-bottom-left-radius: 70%;
-        border-top-right-radius: 70%;
-        transition: all 2s;
-    
-    }
-    .about2:hover{
-        background-color: aqua;
-        width: 100%;
-        height: 300px;
-        border-bottom-right-radius: 100%;
-        border-top-left-radius: 70%;
-        display: block;
-        transition: all 2s;
-    
-    }
-    .basic-info{
-        width: 200px;
-        margin: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
-        /* zoom: 80%; */
-        font-size: 18.9px;
-    }
-    .project-card{
-        display: block;
-        justify-content: space-between;
-        background-color: rgba(183, 234, 234, 0.396);
-        padding: 10px;
-        border-radius: 20px;
-        margin: 20px;
-    }
-       .project-card:hover{
-        display: block;
-        justify-content: space-between;
-        background-color: rgba(183, 234, 234, 0.396);
-        padding: 10px;
-        border-radius: 20px;
-        margin: 20px;
-        box-shadow: 2px 2px 10px 2px grey;
-        transition: all 2s ease-out;
-        
-    }
-    
-    .image img{
-        width: 200px;
-        margin-top: 15px;
-        margin-left: 1%;
-        
-    }
-    .info{
-        width: 100%;
-        font-size: 15px;
-    }
-}
-
 /* common classes */
 .nav{
-    position: fixed;
-    right: 37%;
-    top: -1%;
+    display: flex;
+    justify-self: end;
 }
 .dsh{
-    position: fixed;
-    right: 10%;
-    top: 10%;
+    position: absolute;
+
+    right: 0px;
+    /* top: 10%; */
     
 }
 .dash{
@@ -219,8 +21,10 @@ header{
 }
 .menu{
     background-color: rgb(1, 16, 16);
+    position: fixed;
+    right:0px ;
     margin-top: 10px;
-    margin-right: -550px /*-58px*/;
+    /* margin-right: -550px -58px; */
     width: 250px;
     display: none;
     color: whitesmoke;
@@ -235,9 +39,9 @@ header{
     width: 100%;
     height: 50px;
 }
-.cancel-box{
-    margin-right: 10px;
-}
+/* .cancel-box{
+     margin-right: 10px; 
+} */
 
 .title{
     margin-top: 10px;
@@ -387,6 +191,223 @@ ul{
 }
 /* ------------- */
 
+@media (max-width: 500px){
+    
+body{
+    background-color: aliceblue;
+    cursor: default;
+}
+header{
+    padding: 50px;
+
+}
+.nav{
+    /* position: absolute; */
+    display: flex;
+    justify-self: end;
+    
+    /* right: 50%;
+    top: -1%; */
+}
+.dsh{
+    position: absolute;
+
+    /* right: 10%; */
+    /* top: 10%; */
+    
+}
+.card img{
+    margin-left: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    zoom: 70%;
+}
+
+.icon img{
+    float: left;
+    zoom: 15%;
+    rotate: 130deg;
+}
+
+.about1{
+    background-color: rgba(0, 255, 255, 0.371);
+    border: 2px solid rgba(20, 104, 20, 0.465);
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+
+}
+.about2{
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+    border-bottom-right-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+        transition: all 2s ease-out;
+
+}
+
+.about1:hover{
+    background-color: rgba(0, 255, 255, 0.371);
+    border: 2px solid rgba(20, 104, 20, 0.465);
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 70%;
+    border-top-right-radius: 100%;
+        transition: all 2s ease-out;
+
+}
+.about2:hover{
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 70%;
+    display: flex;
+    flex-wrap: wrap;
+        transition: all 2s ease-out;
+
+}
+
+.basic-info{
+    width: 200px;
+    margin: 10px;
+    margin-top: 50px;
+    zoom: 80%;
+}
+
+
+.project-card{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(183, 234, 234, 0.396);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.project-card:hover{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(183, 234, 234, 0.396);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px 2px grey;
+    transition: all 2s ease-out;
+}
+
+.image img{
+    width: 100px;
+    margin-top: 50px;
+    margin-right: 5px;
+        transition: all 2s ease-out;
+
+}
+.info{
+    width: 200px;
+    font-size: small;
+    transition: all 2s ease-out;
+
+}
+
+}
+@media (max-width:300px){
+    header{
+        padding: 5px;
+        padding-bottom: 50px;
+    }
+    .nav{
+    position: fixed;
+    right: 50%;
+    top: -1%;
+}
+    .card img{
+        margin-left: 10px;
+        margin-top: 40px;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        zoom: 50%;
+    }
+    
+    
+    .about1{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-top-right-radius: 100%;
+    }
+    .about2{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        display: block;
+    }
+    
+    .about1:hover{
+        background-color: rgba(0, 255, 255, 0.371);
+        border: 2px solid rgba(20, 104, 20, 0.465);
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 70%;
+        border-top-right-radius: 70%;
+        transition: all 2s;
+    
+    }
+    .about2:hover{
+        background-color: aqua;
+        width: 100%;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 70%;
+        display: block;
+        transition: all 2s;
+    
+    }
+    .basic-info{
+        width: 200px;
+        margin: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* zoom: 80%; */
+        font-size: 18.9px;
+    }
+    .project-card{
+        display: block;
+        justify-content: space-between;
+        background-color: rgba(183, 234, 234, 0.396);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+    }
+       .project-card:hover{
+        display: block;
+        justify-content: space-between;
+        background-color: rgba(183, 234, 234, 0.396);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 2px 2px 10px 2px grey;
+        transition: all 2s ease-out;
+        
+    }
+    
+    .image img{
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 1%;
+        
+    }
+    .info{
+        width: 100%;
+        font-size: 15px;
+    }
+}
 @media (min-width: 500px){
 
     body{
@@ -397,7 +418,8 @@ ul{
 
     }
     header{
-        padding: 50px;
+        padding-top: 15px;
+        padding-bottom: 50px;
     
     }
     .card img{
