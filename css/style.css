@@ -398,9 +398,11 @@ header{
     }
     
     .image img{
-        width: 200px;
-        margin-top: 15px;
-        margin-left: 1%;
+        width: 100px;
+        margin-top: 50px;
+        margin-right: 5px;
+            transition: all 2s ease-out;
+    
         
     }
     .info{
